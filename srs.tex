@@ -46,17 +46,16 @@
 \begin{flushright}
     \rule{16cm}{5pt}\vskip1cm
     \begin{bfseries}
-        \Huge{SOFTWARE REQUIREMENTS\\ SPECIFICATION}\\
+        \Huge{Especificación de Requerimientos de Software}\\
         \vspace{1.9cm}
-        for\\
         \vspace{1.9cm}
-        $<$Project$>$\\
+        $<$Proyecto$>$\\
         \vspace{1.9cm}
-        \LARGE{Version \myversion approved}\\
+        \LARGE{Versión \myversion aprobada}\\
         \vspace{1.9cm}
-        Prepared by $<$author$>$\\
+        Escrito por $<$autor$>$\\
         \vspace{1.9cm}
-        $<$Organization$>$\\
+        $<$Organización$>$\\
         \vspace{1.9cm}
         \today\\
     \end{bfseries}
@@ -65,12 +64,12 @@
 \tableofcontents
 
 
-\chapter*{Revision History}
+\chapter*{Historial de Cambios}
 
 \begin{center}
     \begin{tabular}{|c|c|c|c|}
         \hline
-	    Name & Date & Reason For Changes & Version\\
+	    Nombre & Fecha & Razón del cambio & Versión\\
         \hline
 	    21 & 22 & 23 & 24\\
         \hline
@@ -79,115 +78,61 @@
     \end{tabular}
 \end{center}
 
-\chapter{Introduction}
+\chapter{Introducción}
 
-\section{Purpose}
-$<$Identify the product whose software requirements are specified in this 
-document, including the revision or release number. Describe the scope of the 
-product that is covered by this SRS, particularly if this SRS describes only 
-part of the system or a single subsystem.$>$
+\section{Propósito}
+$<$Identificar el producto para que se están tomando los requerimientos del documento, incluyendo la revisión y el número de release en caso de aplicar.
+Describe el alcance del producto, particularmente si este SRS describe solo una parte del sistema o un solo sub sistema.$>$
 
-\section{Document Conventions}
-$<$Describe any standards or typographical conventions that were followed when 
-writing this SRS, such as fonts or highlighting that have special significance.  
-For example, state whether priorities  for higher-level requirements are assumed 
-to be inherited by detailed requirements, or whether every requirement statement 
-is to have its own priority.$>$
+\section{Convenciones del documento}
+$<$Describe cualquier estándar o convención tipográfica que fue seguida para la confección del documento SRS, así como tipos de fuentes, subrayados o formas de resaltar lo escrito que tenga alguna significancia especial.$>$
 
-\section{Intended Audience and Reading Suggestions}
-$<$Describe the different types of reader that the document is intended for, 
-such as developers, project managers, marketing staff, users, testers, and 
-documentation writers. Describe what the rest of this SRS contains and how it is 
-organized. Suggest a sequence for reading the document, beginning with the 
-overview sections and proceeding through the sections that are most pertinent to 
-each reader type.$>$
+\section{Para quién está dirigido el documento}
+$<$Describe los diferentes tipos de lectores para los cuales está dirigido el documento, como por ejemplo, desarrolladores, jefes de proyecto, usuarios finales, testers, marketing, documentadores técnicos, etc.
+Además debería sugerir una secuencia para ser leído el documento por cada tipo de usuario donde al que está dirigido, indicando las partes que pueden ser relevantes según el perfil.$>$
 
-\section{Project Scope}
-$<$Provide a short description of the software being specified and its purpose, 
-including relevant benefits, objectives, and goals. Relate the software to 
-corporate goals or business strategies. If a separate vision and scope document 
-is available, refer to it rather than duplicating its contents here.$>$
+\section{Alcance del proyecto}
+$<$Provee una descripción corta del software descrito y su propósito, incluyendo los beneficios relevantes, objetivos y metas.
+Esta sección debe indicar como el software se relaciona con los objetivos corporativos y las metas estratégicas de la empresa.
+Se debe incorporar la visión y misión del proyecto, si está está disponible en otro documento, debe hacer referencia al documento el lugar de repetir la información$>$
 
-\section{References}
-$<$List any other documents or Web addresses to which this SRS refers. These may 
-include user interface style guides, contracts, standards, system requirements 
-specifications, use case documents, or a vision and scope document. Provide 
-enough information so that the reader could access a copy of each reference, 
-including title, author, version number, date, and source or location.$>$
+\section{Referencias}
+$<$Lista cualquier otro documento o dirección web al que el SRS haga alusión.
+Estas pueden incluir guías de interfaces de usuario, contratos, estándares, documentos de requerimientos adicionales, casos de uso, notas del proyecto, misión y visión, etc.
+Se debe proveer la información suficiente para que cualquier lector pueda acceder a una copia de la referencia, incluyendo título, autor, versión, fecha, ubicación y cualquier otra información relevante para desambiguar o poder acceder a los documentos referido.$>$
 
 
-\chapter{Overall Description}
+\chapter{Descripción General}
 
-\section{Product Perspective}
-$<$Describe the context and origin of the product being specified in this SRS.  
-For example, state whether this product is a follow-on member of a product 
-family, a replacement for certain existing systems, or a new, self-contained 
-product. If the SRS defines a component of a larger system, relate the 
-requirements of the larger system to the functionality of this software and 
-identify interfaces between the two. A simple diagram that shows the major 
-components of the overall system, subsystem interconnections, and external 
-interfaces can be helpful.$>$
+\section{Perspectiva del producto}
+$<$Describe el contexto y origen del producto descrito en el SRS.
+Por ejemplo, indica si es un producto nuevo, un derivado de otro producto, reemplazo de un producto, sistema o sub-sistema existente. 
+Además de lo mencionado anteriormente, en esta sección se debe indicar si corresponde a un módulo de un sistema mayor, un sub proyecto dentro del contexto de otro proyecto, y los sistemas colaboradores del mismo proyecto, indicando las interfaces para comunicarse.
+En la medida de lo posible esta sección debe estar acompañada de apoyo de figuras y gráficos para poder aclarar donde está el sistema coexistiendo.$>$
 
-\section{Product Functions}
-$<$Summarize the major functions the product must perform or must let the user 
-perform. Details will be provided in Section 3, so only a high level summary 
-(such as a bullet list) is needed here. Organize the functions to make them 
-understandable to any reader of the SRS. A picture of the major groups of 
-related requirements and how they relate, such as a top level data flow diagram 
-or object class diagram, is often effective.$>$
+\section{Funcionalidades del producto}
+$<$Resumen de las principales funcionalidades que el producto debe realizar o los procesos que el producto soporta.
+Los detalles de cada funcionalidad deben ir en la sección 3 por lo que solo se debe hacer un resumen de alto nivel.
+De preferencia se debe mostrar como las funcionalidades interaccionan entre si, para esto usar de preferencia un diagrama de procesos o un diagrama de flujo de datos.$>$
 
-\section{User Classes and Characteristics}
-$<$Identify the various user classes that you anticipate will use this product.  
-User classes may be differentiated based on frequency of use, subset of product 
-functions used, technical expertise, security or privilege levels, educational 
-level, or experience. Describe the pertinent characteristics of each user class.  
-Certain requirements may pertain only to certain user classes. Distinguish the 
-most important user classes for this product from those who are less important 
-to satisfy.$>$
+\section{Tipos de usuarios y características}
+$<$Identifica los distintos tipos de usuarios que utilizarán el producto. Hay que identificar para los distintos tipos de usuarios las siguientes características si es que son relevantes, frecuencia de uso, conjunto de funciones utilizadas, conocimiento técnico, seguridad o nivel de privilegios que tiene, nivel educacional o experiencia y características adicionales.Algunas funcionalidades solo aplicarán para algunos tipos de usuarios. Se debe distinguir el nivel de relevancia de los usuarios, así, en caso de haber conflicto, se tiene una herramienta que establece una relevancia y una prioridad a la hora de satisfacer los resultados.$>$
 
-\section{Operating Environment}
-$<$Describe the environment in which the software will operate, including the 
-hardware platform, operating system and versions, and any other software 
-components or applications with which it must peacefully coexist.$>$
+\section{Ecosistema de la aplicación}
+$<$Describe el ambiente en el cual la aplicación funcionará, incluyendo hardware, sistema operativo, versión y cualquier otro componente de sistema operativo o aplicación con la que debe coexistir el software.$>$
 
-\section{Design and Implementation Constraints}
-$<$Describe any items or issues that will limit the options available to the 
-developers. These might include: corporate or regulatory policies; hardware 
-limitations (timing requirements, memory requirements); interfaces to other 
-applications; specific technologies, tools, and databases to be used; parallel 
-operations; language requirements; communications protocols; security 
-considerations; design conventions or programming standards (for example, if the 
-customer’s organization will be responsible for maintaining the delivered 
-software).$>$
+\section{Restricciones de diseño e implementación}
+$<$Describe cualquier elemento o problema que pueda limitar las opciones disponibles para los desarrolladores. Esto puede incluir: políticas coporativas, limitaciones de hardware (requerimiento de tiempos de ejecución o utilización de memoria), interfaces a otras aplicaciones, especificaciones de tecnología, herramientas, base de datos a ser utilizadas, operaciones paralelas, lenguajes requeridos, protocolos de comunicación, consideraciones de seguridad, convenciones y estándares de programación.$>$
 
-\section{User Documentation}
-$<$List the user documentation components (such as user manuals, on-line help, 
-and tutorials) that will be delivered along with the software. Identify any 
-known user documentation delivery formats or standards.$>$
-\section{Assumptions and Dependencies}
+\section{Documentación para el usuario}
+$<$Lista de la documentación de los componentes para el usuario que serán entregados con el software, identificando el estándar que será utilizado para entregar esta documentación.$>$
+\section{Suposiciones y dependencias}
+$<$Se lista cualquier suposición que se realice que pueda afectar a los requerimientos levantados en el SRS. Esto puede incluir dependencias de terceras partes o componentes comerciales que se quieran utilizar, problemas y comentarios que puedan surgir de las restricciones técnicas. El proyecto puede verse afectado si las suposiciones son incorrectas, no son compartidas o no se modifican en caso de necesitar cambio. También se debe identificar cualquier factor externo al proyecto que pueda afectar al correcto desempeño del proyecto y si el proyecto o componentes del mismo serán utilizados en otros módulos o proyectos.$>$
 
-$<$List any assumed factors (as opposed to known facts) that could affect the 
-requirements stated in the SRS. These could include third-party or commercial 
-components that you plan to use, issues around the development or operating 
-environment, or constraints. The project could be affected if these assumptions 
-are incorrect, are not shared, or change. Also identify any dependencies the 
-project has on external factors, such as software components that you intend to 
-reuse from another project, unless they are already documented elsewhere (for 
-example, in the vision and scope document or the project plan).$>$
+\chapter{Requerimientos de interfaces externas.}
 
-
-\chapter{External Interface Requirements}
-
-\section{User Interfaces}
-$<$Describe the logical characteristics of each interface between the software 
-product and the users. This may include sample screen images, any GUI standards 
-or product family style guides that are to be followed, screen layout 
-constraints, standard buttons and functions (e.g., help) that will appear on 
-every screen, keyboard shortcuts, error message display standards, and so on.  
-Define the software components for which a user interface is needed. Details of 
-the user interface design should be documented in a separate user interface 
-specification.$>$
-
+\section{Interfaces de usuario}
+$<$Describe las características de cada interfaz expuesta a utilización por los usuarios. Este puede incluir ejemplos de GUI, pantallazos de aplicaciones similares, estándares de diseño o guías de estilo de diseño que se deben seguir, restricciones de distribución de pantalla, botones y elementos que se repetirán en la aplicación, sortcut de teclado, despliegue de mensajes estándar al usuario, etc. Definición de los componentes de interfaz de usuario que sean necesarios. Detalle de la interfaz de usuario debería ir en un documento aparte de especificación de interfaz, pero ser referenciado en este punto.$>$
 \section{Hardware Interfaces}
 $<$Describe the logical and physical characteristics of each interface between 
 the software product and the hardware components of the system. This may include 
