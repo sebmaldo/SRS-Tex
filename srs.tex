@@ -137,64 +137,28 @@ $<$Describe las características de cada interfaz expuesta a utilización por lo
 \section{Interfaces de Hardware}
 $<$Describe las características físicas y lógicas de cada una de las interfaces de los módulos del software y el hardware del producto. Esto puede incluir los tipos de dispositivos soportados, la naturaleza de los datos que se mueven entre el software y el hardware, los controles y puntos en los que ínter actúan y como el protocolo que utilizarán.$>$ 
 
-\section{Software Interfaces}
-$<$Describe the connections between this product and other specific software 
-components (name and version), including databases, operating systems, tools, 
-libraries, and integrated commercial components. Identify the data items or 
-messages coming into the system and going out and describe the purpose of each.  
-Describe the services needed and the nature of communications. Refer to 
-documents that describe detailed application programming interface protocols.  
-Identify data that will be shared across software components. If the data 
-sharing mechanism must be implemented in a specific way (for example, use of a 
-global data area in a multitasking operating system), specify this as an 
-implementation constraint.$>$
+\section{Interacciones de software}
+$<$Describe las interacciones entre este producto y otro componente de software específico, (nombre y versión), incluyendo bases de datos, sistemas operativos, herramientas, librerías, y componentes comerciales integrados. Se identifican los datos o mensajes entrantes y salientes del sistema y se describe el propósito de estos. Se describen los servicios necesarios y la naturaleza de la comunicación. Se referencian documentos que describan en detalle los protocolos de comunicación utilizados, así como las convenciones. Se identifican los datos que serán compartidos entre los componentes de software. Se especifica y define el método de comunicación de los datos compartidos $($por ejemplo, el uso de un área global de memoria compartida en procesos multitarea$)$, especificando las restricciones de implementación.$>$
 
-\section{Communications Interfaces}
-$<$Describe the requirements associated with any communications functions 
-required by this product, including e-mail, web browser, network server 
-communications protocols, electronic forms, and so on. Define any pertinent 
-message formatting. Identify any communication standards that will be used, such 
-as FTP or HTTP. Specify any communication security or encryption issues, data 
-transfer rates, and synchronization mechanisms.$>$
+\section{Interfaces de comunicación}
+$<$Describe los requerimientos asociados con cualquier tipo de comunicación que requerida por el producto, incluyendo e-mail, navegadores web, protocolos de comunicación con otros sistemas, entre otros. Define cualquier formato de comunicación. Identifica cualquier estándar de comunicación utilizado $($ftp, http, etc.$)$. Especifica restricciones y condiciones para realizar la comunicación, por ejemplo sistemas de seguridad, encriptación, ratios de transferencia de datos, tipo de sincronismo, tiempos de respuesta.$>$
 
+\chapter{Funcionalidades del sistema}
+$<$Este template muestra la organización de requerimientos funcionales de acuerdo a los principales servicios prestados por el producto. Se puede organizar esta sección por casos de uso, modelo de operación, clases de usuario, objetos del sistema, herencia de funcionalidades o una combinación de alternativas mencionadas, lo que sea más coherente de utilizar.$>$
 
-\chapter{System Features}
-$<$This template illustrates organizing the functional requirements for the 
-product by system features, the major services provided by the product. You may 
-prefer to organize this section by use case, mode of operation, user class, 
-object class, functional hierarchy, or combinations of these, whatever makes the 
-most logical sense for your product.$>$
+\section{Funcionalidad del sistema 1}
+$<$Hay que utilizar una frase descriptiva de la funcionalidad a ser descrita, utilizando solo algunas palabras, no es necesario enumerar.$>$
 
-\section{System Feature 1}
-$<$Don’t really say “System Feature 1.” State the feature name in just a few 
-words.$>$
+\subsection{Descripción y prioridad}
+$<$Provee una descripción corta de la funcionalidad y establece su nivel de prioridad, se pueden incorporar componentes adicionales que ayudan a establecer mejor la prioridad como beneficios, costos, riesgos, entre otros.$>$
 
-\subsection{Description and Priority}
-$<$Provide a short description of the feature and indicate whether it is of 
-High, Medium, or Low priority. You could also include specific priority 
-component ratings, such as benefit, penalty, cost, and risk (each rated on a 
-relative scale from a low of 1 to a high of 9).$>$
+\subsection{Secuencia de estimulo respuesta}
+$<$Lista la secuencia de acciones de usuario y respuestas del sistema que permite definir el comportamiento que debería tener la funcionalidad. Esto debe estar relacionado con los elementos de diálogo de los casos de uso.$>$
 
-\subsection{Stimulus/Response Sequences}
-$<$List the sequences of user actions and system responses that stimulate the 
-behavior defined for this feature. These will correspond to the dialog elements 
-associated with use cases.$>$
+\subsection{Requerimientos funcionales}
+$<$Detalle los elementos asociados a este requerimiento funcional. Esto es, todos los elementos y capacidades que debe tener el software para llevar a cabo los servicios que permiten al usuario la activad para la que se está construyendo. Hay que incluir como el sistema debe responder a entradas incorrectas errores y las acciones que debe realizar para corregirlos. Los requerimientos deben ser concisos, completos, sin ambigüedades, verificables y necesarios. En caso de no contar con los elementos completos de la información se debe indicar que debe ser completado. Como parte del formato se exige que cada requerimiento debe tener un identificador único para identificarlo del resto como REQ-1 o similares.$>$
 
-\subsection{Functional Requirements}
-$<$Itemize the detailed functional requirements associated with this feature.  
-These are the software capabilities that must be present in order for the user 
-to carry out the services provided by the feature, or to execute the use case.  
-Include how the product should respond to anticipated error conditions or 
-invalid inputs. Requirements should be concise, complete, unambiguous, 
-verifiable, and necessary. Use “TBD” as a placeholder to indicate when necessary 
-information is not yet available.$>$
-
-$<$Each requirement should be uniquely identified with a sequence number or a 
-meaningful tag of some kind.$>$
-
-REQ-1:	REQ-2:
-
-\section{System Feature 2 (and so on)}
+\section{Funcionalidad del sistema 2 (continuar)}
 
 
 \chapter{Other Nonfunctional Requirements}
